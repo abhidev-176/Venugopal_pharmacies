@@ -1,0 +1,38 @@
+:root{
+  --ink:#0e2b23;
+  --cream:#f6f2e9;
+  --teal-deep:#0f3d33;
+  --teal:#1c6b57;
+  --sage:#8fae9c;
+  --amber:#d98e3f;
+  --line: rgba(15,61,51,0.15);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{height:100%;overflow:hidden;}
+body{
+  font-family:'Manrope', sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+}
+
+/* ---------- TRACK / SLIDES ---------- */
+.track{
+  display:flex;
+  width:500vw;
+  height:100vh;
+  transition:transform 0.65s cubic-bezier(.65,0,.35,1);
+}
+.slide{
+  width:100vw;
+  height:100vh;
+  flex-shrink:0;
+  position:relative;
+}
+.scroll-area{
+  width:100%;
+  height:100%;
+  overflow-y:auto;
+  overflow-x:hidden;
+  scrollbar-width:thin;
+}
+

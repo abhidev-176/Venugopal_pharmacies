@@ -1,0 +1,11 @@
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:900px){
+  .nav-links{ display:none; }
+  .about-grid, .contact-grid{ grid-template-columns:1fr; }
+  .highlights{ grid-template-columns:1fr 1fr; }
+  .highlight{ border-right:none; border-bottom:1px solid var(--line); padding-bottom:24px; margin-bottom:10px; }
+  .steps-grid, .services-grid, .team-grid{ grid-template-columns:1fr; }
+  .med-grid{ grid-template-columns:repeat(2,1fr); }
+  .arrow{ width:42px; height:42px; }
+}
+

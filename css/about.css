@@ -1,0 +1,86 @@
+/* ---------- ABOUT / SHARED PADDED SECTIONS ---------- */
+.about-pad, .med-pad{ padding:120px 6vw 90px; }
+.about-head{
+  display:flex; justify-content:space-between; align-items:flex-end; gap:40px;
+  border-bottom:1px solid var(--line); padding-bottom:32px; flex-wrap:wrap;
+}
+.about-head .eyebrow{ color:var(--teal); }
+.about-head h2{
+  font-family:'Fraunces', serif; font-weight:500; font-size:clamp(2.2rem,4.6vw,3.6rem);
+  max-width:640px; line-height:1.1; color:var(--teal-deep); margin-top:8px;
+}
+.about-head p{ max-width:320px; font-size:0.98rem; line-height:1.6; color:rgba(14,43,35,0.6); padding-bottom:4px; }
+
+.about-grid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:60px; margin-top:60px; align-items:start; }
+.about-copy p{ font-size:1.08rem; line-height:1.85; color:rgba(14,43,35,0.78); margin-bottom:22px; max-width:560px; }
+.about-copy p:first-child::first-letter{
+  font-family:'Fraunces', serif; font-size:3.4rem; float:left; line-height:0.8;
+  padding:6px 10px 0 0; color:var(--teal); font-weight:600;
+}
+.feature-photo{
+  width:100%; aspect-ratio:4/5; border-radius:4px; position:relative;
+  background:
+    linear-gradient(0deg, rgba(15,61,51,0.35), rgba(15,61,51,0)),
+    url('https://images.unsplash.com/photo-1631549916768-4119b2e5f926?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
+}
+.feature-photo .tag{
+  position:absolute; bottom:20px; left:20px; background:var(--cream); color:var(--teal-deep);
+  font-size:0.76rem; padding:8px 14px; border-radius:2px; font-weight:600;
+}
+
+.highlights{ margin-top:70px; display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid var(--line); }
+.highlight{ padding:30px 24px 0 0; border-right:1px solid var(--line); }
+.highlight:last-child{ border-right:none; }
+.highlight .num{ font-family:'Fraunces', serif; font-size:0.9rem; color:var(--amber); font-weight:600; margin-bottom:12px; display:block; }
+.highlight h3{ font-family:'Fraunces', serif; font-weight:500; font-size:1.2rem; color:var(--teal-deep); margin-bottom:8px; }
+.highlight p{ font-size:0.88rem; line-height:1.55; color:rgba(14,43,35,0.6); padding-right:8px; }
+
+.team-band{ margin-top:80px; padding-top:50px; border-top:1px solid var(--line); }
+.team-band h2{ font-family:'Fraunces', serif; font-weight:500; font-size:clamp(1.7rem,3vw,2.3rem); color:var(--teal-deep); margin:10px 0 36px; }
+.team-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:30px; }
+.team-card{ text-align:left; }
+.avatar{
+  width:64px;height:64px;border-radius:50%; background:var(--teal-deep); color:var(--cream);
+  display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-weight:500; margin-bottom:14px;
+}
+.team-card h4{ font-size:1.02rem; color:var(--teal-deep); margin-bottom:4px; }
+.team-card span{ font-size:0.82rem; color:rgba(14,43,35,0.55); }
+
+.closing-note{ margin-top:80px; padding-top:44px; border-top:1px solid var(--line); }
+.closing-note p{
+  font-family:'Fraunces', serif; font-weight:500; font-size:clamp(1.3rem,2.4vw,1.8rem);
+  line-height:1.5; color:var(--teal-deep); max-width:800px;
+}
+
+.faq-band{ margin-top:80px; padding-top:50px; border-top:1px solid var(--line); }
+.faq-band h2{ font-family:'Fraunces', serif; font-weight:500; font-size:clamp(1.7rem,3vw,2.3rem); color:var(--teal-deep); margin:10px 0 36px; }
+.faq-list{ display:grid; grid-template-columns:1fr 1fr; gap:30px 50px; }
+.faq-item h4{ font-size:1.02rem; color:var(--teal-deep); margin-bottom:8px; font-weight:600; }
+.faq-item p{ font-size:0.92rem; line-height:1.6; color:rgba(14,43,35,0.62); }
+
+.cat-strip{ margin-top:44px; display:flex; gap:12px; flex-wrap:wrap; }
+.cat-chip{
+  padding:9px 18px; border:1px solid var(--line); border-radius:20px; font-size:0.85rem;
+  color:rgba(14,43,35,0.65); cursor:default;
+}
+.cat-chip.active{ background:var(--teal-deep); color:var(--cream); border-color:var(--teal-deep); }
+
+.note-text{
+  margin-top:60px; padding:20px 22px; background:rgba(217,142,63,0.1); border-left:3px solid var(--amber);
+  font-size:0.92rem; line-height:1.6; color:rgba(14,43,35,0.75); max-width:700px;
+}
+
+/* ---------- DOCTOR PROFILE ---------- */
+.doctor-profile{
+  display:flex; flex-direction:column; align-items:center; text-align:center;
+  gap:0; margin-bottom:50px; padding-bottom:40px; border-bottom:1px solid var(--line);
+}
+.doctor-photo{
+  width:100%; max-width:720px; height:60vh; object-fit:cover; object-position:top;
+  border-radius:8px; border:2px solid var(--teal);
+}
+.doctor-info{ margin-top:26px; max-width:720px; }
+.doctor-info h3{ font-family:'Fraunces', serif; font-weight:600; font-size:2rem; color:var(--teal-deep); }
+.doctor-role{ display:block; font-size:0.9rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--amber); font-weight:600; margin:8px 0 18px; }
+.doctor-info p{ font-size:1.12rem; line-height:1.85; color:rgba(14,43,35,0.78); text-align:left; }
+

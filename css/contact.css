@@ -1,0 +1,17 @@
+/* ---------- CONTACT ---------- */
+.contact-grid{ margin-top:60px; display:grid; grid-template-columns:0.9fr 1.1fr; gap:60px; }
+.c-item{ margin-bottom:28px; }
+.c-label{ display:block; font-size:0.76rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--teal); font-weight:600; margin-bottom:6px; }
+.c-item p{ font-size:1rem; color:var(--ink); line-height:1.5; }
+.contact-form{ display:flex; flex-direction:column; gap:16px; }
+.contact-form input, .contact-form textarea{
+  border:1px solid var(--line); border-radius:3px; padding:14px 16px; font-family:'Manrope',sans-serif;
+  font-size:0.95rem; background:#fff; color:var(--ink); resize:vertical;
+}
+.contact-form input:focus, .contact-form textarea:focus{ outline:2px solid var(--teal); outline-offset:1px; }
+.contact-form .btn{ align-self:flex-start; }
+.form-status{ font-size:0.88rem; margin-top:-4px; min-height:18px; }
+.form-status.sending{ color:rgba(14,43,35,0.6); }
+.form-status.success{ color:var(--teal); font-weight:600; }
+.form-status.error{ color:#b3452c; font-weight:600; }
+
